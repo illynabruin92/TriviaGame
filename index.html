@@ -12,7 +12,7 @@
     <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
     <script src="https://code.jquery.com/jquery.js"></script>
     <title>Trivia Game</title>
-    <script src="/assets/triviajs/app.js"></script>
+    <script src="assets/triviajs/app.js"></script>
     <script>
       var userchoices=new Array()
     </script>
@@ -21,56 +21,60 @@
 
 
   <body>
+    <div class="container"
+
     <div id="time-left"></div>
 
     <p align="center">
 
     <form method="POST" name="trivia">
 
+    <h1>Disney Trivia</h1>
+
     <div class="qheader">
-      1. What is the name of the Reggae singing Caribbean crab in the Little Mermaid?
+      1. What is the name of the Caribbean crab in The Little Mermaid?
     </div>
     <div class="qselections">
       <input type="radio" value="a" name="question1">
-      a) Scuttle<br>
+      a) Scuttle
       <input type="radio" value="b" name="question1">
-      b) Sebastian<br>
+      b) Sebastian
       <input type="radio" value="c" name="question1">
-      c) Max<br>
+      c) Max
       <input type="radio" value="d" name="question1">
-      d) Herald<br>
+      d) Herald
     </div>
 
     <br>
 
     <div class="qheader">
-      2. What is the name of the racing car voiced by Owen Wilson in the film, Cars?
+      2. What is the name of the racing car voiced by Owen Wilson in the film Cars?
     </div>
     <div class="qselections">
       <input type="radio" value="a" name="question2">
-      a) Mater<br>
+      a) Mater
       <input type="radio" value="b" name="question2">
-      b) Lightning McQueen<br>
+      b) Lightning McQueen
       <input type="radio" value="c" name="question2">
-      c) Chick Hicks<br>
+      c) Chick Hicks
       <input type="radio" value="d" name="question2">
-      d) Doc Hudson<br>
+      d) Doc Hudson
     </div>
 
     <br>
 
     <div class="qheader">
-      3. Which film does Eddie Murphy do the voice-over for a red Chinese dragon?
+      3. In which film does Eddie Murphy voice a red dragon?
     </div>
     <div class="qselections">
       <input type="radio" value="a" name="question3">
-      a) Monsters Inc.<br>
+      a) Monsters Inc.
       <input type="radio" value="b" name="question3">
-      b) Mulan<br>
+      b) Mulan
       <input type="radio" value="c" name="question3">
-      c) Big Hero 6<br>
+      c) Big Hero 6
       <input type="radio" value="d" name="question3">
-      d) American Dragon: Jake Long<br>
+      d) American Dragon: Jake Long
     </div>
 
     <br>
@@ -80,13 +84,13 @@
     </div>
     <div class="qselections">
       <input type="radio" value="a" name="question4">
-      a) Snow White<br>
+      a) Snow White
       <input type="radio" value="b" name="question4">
-      b) Sleeping Beauty<br>
+      b) Sleeping Beauty
       <input type="radio" value="c" name="question4">
-      c) Cinderella<br>
+      c) Cinderella
       <input type="radio" value="d" name="question4">
-      d) Alice in Wonderland<br>
+      d) Alice in Wonderland
     </div>
 
     <br>
@@ -96,13 +100,13 @@
     </div>
     <div class="qselections">
       <input type="radio" value="a" name="question5">
-      a) Hammerhead Sharks<br>
+      a) Hammerhead Sharks
       <input type="radio" value="b" name="question5">
-      b) Octopi<br>
+      b) Octopi
       <input type="radio" value="c" name="question5">
-      c) Turtles<br>
+      c) Turtles
       <input type="radio" value="d" name="question5">
-      d) Clownfish<br>
+      d) Clownfish
     </div>
 
     <br>
@@ -112,29 +116,29 @@
     </div>
     <div class="qselections">
       <input type="radio" value="a" name="question6">
-      a) Childrens' Toys<br>
+      a) Childrens' Toys
       <input type="radio" value="b" name="question6">
-      b) Wild Thumpers<br>
+      b) Wild Thumpers
       <input type="radio" value="c" name="question6">
-      c) Childrens' Screams<br>
+      c) Childrens' Screams
       <input type="radio" value="d" name="question6">
-      d) White Socks<br>
+      d) White Socks
     </div>
 
     <br>
 
     <div class="qheader">
-      7. Name the lyricist and song-writer of the Lion King songs 'Circle of Life', 'Be Prepared' and 'Can You Fell The Love Tonight'?
+      7. Name the lyricist and song-writer of the Lion King songs 'Circle of Life', 'Be Prepared' and 'Can You Feel The Love Tonight'?
     </div>
     <div class="qselections">
       <input type="radio" value="a" name="question7">
-      a) Tim Rice and Alan Menken<br>
+      a) Tim Rice and Alan Menken
       <input type="radio" value="b" name="question7">
-      b) Tim Rice and Elton John<br>
+      b) Tim Rice and Elton John
       <input type="radio" value="c" name="question7">
-      c) Hans Zimmer and Mark Mancina<br>
+      c) Hans Zimmer and Mark Mancina
       <input type="radio" value="d" name="question7">
-      d) Benny Andersson and Jay Rifkin<br>
+      d) Benny Andersson and Jay Rifkin
     </div>
 
     <br>
@@ -144,13 +148,13 @@
     </div>
     <div class="qselections">
       <input type="radio" value="a" name="question8">
-      a) Something There<br>
+      a) Something There
       <input type="radio" value="b" name="question8">
-      b) I See The Light<br>
+      b) I See The Light
       <input type="radio" value="c" name="question8">
-      c) For a Moment<br>
+      c) For a Moment
       <input type="radio" value="d" name="question8">
-      d) A Whole New World<br>
+      d) A Whole New World
     </div>
 
     <br>
@@ -160,13 +164,13 @@
     </div>
     <div class="qselections">
       <input type="radio" value="a" name="question9">
-      a) Yodelberg<br>
+      a) Yodelberg
       <input type="radio" value="b" name="question9">
-      b) Stayin' Cool<br>
+      b) Stayin' Cool
       <input type="radio" value="c" name="question9">
-      c) The Sorcerer's Apprentice<br>
+      c) The Sorcerer's Apprentice
       <input type="radio" value="d" name="question9">
-      d) Tapped Out<br>
+      d) Tapped Out
     </div>
 
     <br>
@@ -176,16 +180,21 @@
     </div>
     <div class="qselections">
       <input type="radio" value="a" name="question10">
-        a) Ursula, The Little Mermaid<br>
+        a) Ursula, The Little Mermaid
       <input type="radio" value="b" name="question10">
-        b) Evil Queen, Snow White<br>
+        b) Evil Queen, Snow White
       <input type="radio" value="c" name="question10">
-        c) Sylvester Shyster, Mickey Mouse in Death Valley<br>
+        c) Sylvester Shyster, Mickey Mouse in Death Valley
       <input type="radio" value="d" name="question10">
-        d) Jafar, Aladdin<br>
+        d) Jafar, Aladdin
     </div>
 
+    <div id= "btn1">
+      <button>Submit</button>
+    </div>
+    
     </form>
+  </div>
 
 </body>
 
