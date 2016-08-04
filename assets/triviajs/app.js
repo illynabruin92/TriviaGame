@@ -1,6 +1,6 @@
 var audio = new Audio('assets/triviaimages/johnwilliams.mp3');
 
-setTimeout(oneSecond, 1000 * 1);
+setTimeout(oneSecond, 1000 * 0.5);
 setTimeout(tenSeconds, 1000 * 10);
 setTimeout(twentySeconds, 1000 * 20);
 setTimeout(thirtySeconds, 1000 * 30);
@@ -40,49 +40,127 @@ function timeUp(){
 
 var correct = 0
 var incorrect = 0
-var unanswered = 0
 
 //Total number of questions:
 var totalquestions = 10
 
 //Answers
-var correctanswers = new Array()
-correctanswers[1] = 'b'
-correctanswers[2] = 'b'
-correctanswers[3] = 'b'
-correctanswers[4] = 'd'
-correctanswers[5] = 'c'
-correctanswers[6] = 'c'
-correctanswers[7] = 'b'
-correctanswers[8] = 'd'
-correctanswers[9] = 'c'
-correctanswers[10] = 'a'
+var correctanswers = ['b','b','b','d','c','c','b','d','c','a']
 
-function checkanswer(){
+function submitgame(){
       $("#btn1").click(function(){
-          $('<form>').remove();
-          $('p').prepend("All Done!");
-          $('p').append("Correct Answers: ");
-          $('p').append("Incorrect Answers: ");
-          $('p').append("Unanswered: ");
+          $('#correct').html('<span> Correct: ' + correct + '</span>');
+          $('#incorrect').html('<span> Incorrect: ' + incorrect + '</span>');
       });
 }
 
-  function check(){
-    var incorrect = null
-    for (q = 1; q <= totalquestions; q++){
-	     var thequestion = eval("document.trivia.question"+q)
+  function check1(){
+  if (correctanswers[0] = 'b'){
+    correct++;
+    $('#correct').html('<span> Correct: ' + correct + '</span>');
+  }
+  else {
+    incorrect++;
+    $('#incorrect').html('<span> Incorrect: ' + incorrect + '</span>');
+  }
+}
 
-	    for (b = 0; b < thequestion.length; b++){
-		      if (thequestion[b].checked == true)
-		      actualchoices[q] = thequestion[b].value
-		}
+function check2(){
+  if (correctanswers[1] = 'b'){
+    correct++;
+    $('#correct').html('<span> Correct: ' + correct + '</span>');
+  }
+  else {
+    incorrect++;
+    $('#incorrect').html('<span> Incorrect: ' + incorrect + '</span>');
+  }
+}
 
-	   if (actualchoices[q] != correctchoices[q]){ //for wrong answers
-		     if (incorrect == null)
-		      incorrect = q
-		  else
-		    incorrect += "/" + q
-		}
-	}
+
+function check3(){
+  if (correctanswers[2] = 'b'){
+    correct++;
+    $('#correct').html('<span> Correct: ' + correct + '</span>');
+  }
+  else {
+    incorrect++;
+    $('#incorrect').html('<span> Incorrect: ' + incorrect + '</span>');
+  }
+}
+
+function check4(){
+  if (correctanswers[3] = 'd'){
+    correct++;
+    $('#correct').html('<span> Correct: ' + correct + '</span>');
+  }
+  else {
+    incorrect++;
+    $('#incorrect').html('<span> Incorrect: ' + incorrect + '</span>');
+  }
+}
+
+function check5(){
+  if (correctanswers[4] = 'c'){
+    correct++;
+    $('#correct').html('<span> Correct: ' + correct + '</span>');
+  }
+  else {
+    incorrect++;
+    $('#incorrect').html('<span> Incorrect: ' + incorrect + '</span>');
+  }
+}
+
+function check6(){
+  if (correctanswers[5] = 'c'){
+    correct++;
+    $('#correct').html('<span> Correct: ' + correct + '</span>');
+  }
+  else {
+    incorrect++;
+    $('#incorrect').html('<span> Incorrect: ' + incorrect + '</span>');
+  }
+}
+
+function check7(){
+  if (correctanswers[6] = 'b'){
+    correct++;
+    $('#correct').html('<span> Correct: ' + correct + '</span>');
+  }
+  else {
+    incorrect++;
+    $('#incorrect').html('<span> Incorrect: ' + incorrect + '</span>');
+  }
+}
+
+function check8(){
+  if (correctanswers[7] = 'd'){
+    correct++;
+    $('#correct').html('<span> Correct: ' + correct + '</span>');
+  }
+  else {
+    incorrect++;
+    $('#incorrect').html('<span> Incorrect: ' + incorrect + '</span>');
+  }
+}
+
+function check9(){
+  if (correctanswers[8] = 'c'){
+    correct++;
+    $('#correct').html('<span> Correct: ' + correct + '</span>');
+  }
+  else {
+    incorrect++;
+    $('#incorrect').html('<span> Incorrect: ' + incorrect + '</span>');
+  }
+}
+
+function check10(){
+  if (correctanswers[9] = 'a'){
+    correct++;
+    $('#correct').html('<span> Correct: ' + correct + '</span>');
+  }
+  else {
+    incorrect++;
+    $('#incorrect').html('<span> Incorrect: ' + incorrect + '</span>');
+  }
 }
