@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="assets/triviacss/reset.css">
+    <link rel="stylesheet" href="assets/triviacss/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <title>Trivia Game</title>
+    <script src="/assets/triviajs/app.js"></script>
+    <script>
+      var userchoices=new Array()
+    </script>
+  </head>
+
+
+
+  <body>
+    <div id="time-left"></div>
+
+    <p align="center">
+
+    <form method="POST" name="trivia">
+
+    <div class="qheader">
+      1. What is the name of the Reggae singing Caribbean crab in the Little Mermaid?
+    </div>
+    <div class="qselections">
+      <input type="radio" value="a" name="question1">
+      a) Scuttle<br>
+      <input type="radio" value="b" name="question1">
+      b) Sebastian<br>
+      <input type="radio" value="c" name="question1">
+      c) Max<br>
+      <input type="radio" value="d" name="question1">
+      d) Herald<br>
+    </div>
+
+    <br>
+
+    <div class="qheader">
+      2. What is the name of the racing car voiced by Owen Wilson in the film, Cars?
+    </div>
+    <div class="qselections">
+      <input type="radio" value="a" name="question2">
+      a) Mater<br>
+      <input type="radio" value="b" name="question2">
+      b) Lightning McQueen<br>
+      <input type="radio" value="c" name="question2">
+      c) Chick Hicks<br>
+      <input type="radio" value="d" name="question2">
+      d) Doc Hudson<br>
+    </div>
+
+    <br>
+
+    <div class="qheader">
+      3. Which film does Eddie Murphy do the voice-over for a red Chinese dragon?
+    </div>
+    <div class="qselections">
+      <input type="radio" value="a" name="question3">
+      a) Monsters Inc.<br>
+      <input type="radio" value="b" name="question3">
+      b) Mulan<br>
+      <input type="radio" value="c" name="question3">
+      c) Big Hero 6<br>
+      <input type="radio" value="d" name="question3">
+      d) American Dragon: Jake Long<br>
+    </div>
+
+    <br>
+
+    <div class="qheader">
+      4. The villain, The Queen of Hearts, appears in which 1951 Disney film?
+    </div>
+    <div class="qselections">
+      <input type="radio" value="a" name="question4">
+      a) Snow White<br>
+      <input type="radio" value="b" name="question4">
+      b) Sleeping Beauty<br>
+      <input type="radio" value="c" name="question4">
+      c) Cinderella<br>
+      <input type="radio" value="d" name="question4">
+      d) Alice in Wonderland<br>
+    </div>
+
+    <br>
+
+    <div class="qheader">
+      5. What animals portray surfer dudes in Finding Nemo?
+    </div>
+    <div class="qselections">
+      <input type="radio" value="a" name="question5">
+      a) Hammerhead Sharks<br>
+      <input type="radio" value="b" name="question5">
+      b) Octopi<br>
+      <input type="radio" value="c" name="question5">
+      c) Turtles<br>
+      <input type="radio" value="d" name="question5">
+      d) Clownfish<br>
+    </div>
+
+    <br>
+
+    <div class="qheader">
+      6. What are Scully and Mike collecting to power Monstropolis in Monsters, Inc.?
+    </div>
+    <div class="qselections">
+      <input type="radio" value="a" name="question6">
+      a) Childrens' Toys<br>
+      <input type="radio" value="b" name="question6">
+      b) Wild Thumpers<br>
+      <input type="radio" value="c" name="question6">
+      c) Childrens' Screams<br>
+      <input type="radio" value="d" name="question6">
+      d) White Socks<br>
+    </div>
+
+    <br>
+
+    <div class="qheader">
+      7. Name the lyricist and song-writer of the Lion King songs 'Circle of Life', 'Be Prepared' and 'Can You Fell The Love Tonight'?
+    </div>
+    <div class="qselections">
+      <input type="radio" value="a" name="question7">
+      a) Tim Rice and Alan Menken<br>
+      <input type="radio" value="b" name="question7">
+      b) Tim Rice and Elton John<br>
+      <input type="radio" value="c" name="question7">
+      c) Hans Zimmer and Mark Mancina<br>
+      <input type="radio" value="d" name="question7">
+      d) Benny Andersson and Jay Rifkin<br>
+    </div>
+
+    <br>
+
+    <div class="qheader">
+      8. Which duet sung by Princess Jasmine and Aladdin appears in the film, Aladdin?
+    </div>
+    <div class="qselections">
+      <input type="radio" value="a" name="question8">
+      a) Something There<br>
+      <input type="radio" value="b" name="question8">
+      b) I See The Light<br>
+      <input type="radio" value="c" name="question8">
+      c) For a Moment<br>
+      <input type="radio" value="d" name="question8">
+      d) A Whole New World<br>
+    </div>
+
+    <br>
+
+    <div class="qheader">
+      9. In which short Disney film do we see Mickey Mouse lose control of Mops and Buckets?
+    </div>
+    <div class="qselections">
+      <input type="radio" value="a" name="question9">
+      a) Yodelberg<br>
+      <input type="radio" value="b" name="question9">
+      b) Stayin' Cool<br>
+      <input type="radio" value="c" name="question9">
+      c) The Sorcerer's Apprentice<br>
+      <input type="radio" value="d" name="question9">
+      d) Tapped Out<br>
+    </div>
+
+    <br>
+
+    <div class="qheader">
+      10. Which Disney character sings the song 'Poor Unfortunate Souls'?
+    </div>
+    <div class="qselections">
+      <input type="radio" value="a" name="question10">
+        a) Ursula, The Little Mermaid<br>
+      <input type="radio" value="b" name="question10">
+        b) Evil Queen, Snow White<br>
+      <input type="radio" value="c" name="question10">
+        c) Sylvester Shyster, Mickey Mouse in Death Valley<br>
+      <input type="radio" value="d" name="question10">
+        d) Jafar, Aladdin<br>
+    </div>
+
+    </form>
+
+</body>
+
+</html>
